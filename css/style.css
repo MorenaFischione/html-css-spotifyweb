@@ -20,6 +20,10 @@ a {
     color: white;
 }
 
+hr {
+    color: white;ß
+}
+
 #logo-nav,
 #home,
 #playlist {
@@ -97,10 +101,22 @@ ul li>a {
 .img {
     filter: invert(0.5);
 }
-ul li {
-    padding: 10px 0;
+
+
+header,
+main,
+footer {
+    flex: 0 1 130px;
 }
 
-header {
-    flex: 0 1 130px;
+div.playlist-bottom li {
+    padding: 5px 0;
+}
+
+div.playlist-bottom {
+    overflow-y: scroll;
+}
+
+footer.flex div {
+    align-self: flex-end;
 }
