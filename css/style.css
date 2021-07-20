@@ -26,7 +26,8 @@ hr {
 
 #logo-nav,
 #home,
-#playlist {
+#playlist,
+#footer {
     margin-left: 20px;
 }
 
@@ -47,7 +48,8 @@ hr {
 	float: right;
 }
 
-header.header-top {
+header.header-top,
+main.main-area-prince {
     width: 80%;
     height: 100px;
     background-color: rgb(26, 26, 26);
@@ -81,6 +83,18 @@ header div button.upgrade {
     
 }
 
+#footer .flex-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav.nav-centrale .flex-nav-centrale {
+    display: flex;
+    justify-content: center;
+}
+
+
 div img {
     width: 30px;
     vertical-align: middle;
@@ -102,6 +116,10 @@ ul li>a {
     filter: invert(0.5);
 }
 
+.img-profilo {
+    width: 20px;
+}
+
 
 header,
 main,
@@ -117,6 +135,8 @@ div.playlist-bottom {
     overflow-y: scroll;
 }
 
-footer.flex div {
-    align-self: flex-end;
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
