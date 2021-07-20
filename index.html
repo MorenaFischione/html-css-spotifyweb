@@ -9,38 +9,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,700;1,900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href=“css/style.css”>
-    <title>Spotyfy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify</title>
 </head>
 <body>
     <div class="container">
-        <div class="area-control">
+        <div class="area-control clearfix">
+
             <!-- Bottone upgrade da posizionare a destra dell'header area di controllo -->
             <!-- Header dell'area di controllo con le stesse dimensioni del main principale  -->
-            <header>
-                <a buttom href="#">Effettua l'upgrade</a>
+            <header class="header-top fr">
+                <div>
+                    <button class="upgrade">effetua l'upgrade</button>
+                </div>
             </header>
-            <!-- Area di navigazione laterale che metterò in flex direction column justify-content between-->
-            <nav class="nav-bar">
 
+            <!-- Area di navigazione laterale che metterò in flex direction column justify-content between-->
+            <nav class="nav-bar fr flex">
                 <!-- sezione Logo -->
                 <header class="header-nav-bar">
-                    <ul id="logo-nav">
+                    <div id="logo-nav" class="flex">
                         <!-- immagine del logo  -->
-                        <li></li>
-                    </ul>
+                        <img class="logo-spotify" src="img/logo.svg" alt="logo spotify">
+                    </div>
                 </header>
 
                 <!-- sezione Home -->
                 <main class="main-nav-bar">
-                    <section id="home">
+                    <section id="home" class="flex">
                         <!-- home + icona  -->
-                        <h3></h3>
-                        <ul class="cerca">
+                        <div>
+                            <a href="#">
+                                <img class="img-home" src="img/home.svg" alt="immagine di home">
+                            </a>
+                            <a href="#">Home</a>
+                        </div>
+                    
+                        <ul>
                             <!-- Cerca + icona  -->
-                            <li></li>
+                            <li class="cerca"> 
+                                <a href="#">
+                                    <img class="img img-cerca" src="img/search.svg" alt="immagine di cerca">
+                                </a>
+                                <a class="bg-lightgrey" href="#">Cerca</a>
+                            </li>
                             <!-- la tua libreria + icona -->
-                            <li></li>
+                            <li class="libreria">
+                                <a href="#">
+                                    <img class="img img-libreria" src="img/libreria.svg" alt="immagine di libreria">
+                                </a>
+                                <a class="bg-lightgrey" ref="#">La tua libreria</a>
+                            </li>
                         </ul>
                     </section>
 
@@ -48,17 +67,23 @@
                     <section id="playlist">
                         <!-- parte alta della playlist con titolo + (sotto) immagine e testo  -->
                         <div class="playlist-top">
-                            <h3></h3>
-                            <img src="" alt=""> <span></span>
+                            <h3>Playlist</h3>
+                            <div>
+                                <img class="img img-crea-pl" src="img/download.svg" alt=""> 
+                                <a class="bg-lightgrey" href="#">Crea Playlist</a>
+                            </div>                       
                         </div>
                         <!-- parte bassa playlist con elenco nome playlist che dovrà diventare in overflow -->
                         <div class="playlist-bottom">
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                
                             </ul>
+                            
                         </div>
                     </section>
                 </main>

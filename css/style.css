@@ -9,3 +9,98 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+
+ul {
+    list-style-type: none ;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo-nav,
+#home,
+#playlist {
+    margin-left: 20px;
+}
+
+/* FLOAT  */
+
+.clearfix::after {
+	content: “”;
+	display: table;
+	clear: both;
+}
+
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+header.header-top {
+    width: 80%;
+    height: 100px;
+    background-color: rgb(26, 26, 26);
+    text-align: end;
+}
+
+nav.nav-bar {
+    width: 20%;
+    background-color: black;
+}
+
+
+header div button.upgrade {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    margin: 20px;
+    background-color: rgb(26, 26, 26);
+}
+
+#logo-nav img.logo-spotify {
+    width: 130px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+div img {
+    width: 30px;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+main h3 {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bg-lightgrey,
+ul li>a {
+    color:rgb(145, 145, 145, 0.5);
+}
+
+.img {
+    filter: invert(0.5);
+}
+ul li {
+    padding: 10px 0;
+}
+
+header {
+    flex: 0 1 130px;
+}
