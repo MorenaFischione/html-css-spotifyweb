@@ -13,19 +13,19 @@
     <title>Spotify</title>
 </head>
 <body>
-    <div class="container">
-        <div class="area-control clearfix">
+    <div class="container clearfix">
+        <!-- Bottone upgrade da posizionare a destra dell'header area di controllo -->
+        <!-- Header dell'area di controllo con le stesse dimensioni del main principale  -->
+        <header class="header-top fr">
+            <div>
+                <button class="upgrade">effetua l'upgrade</button>
+            </div>
+        </header>
 
-            <!-- Bottone upgrade da posizionare a destra dell'header area di controllo -->
-            <!-- Header dell'area di controllo con le stesse dimensioni del main principale  -->
-            <header class="header-top fr">
-                <div>
-                    <button class="upgrade">effetua l'upgrade</button>
-                </div>
-            </header>
+        <div class="area-control fl">
 
             <!-- Area di navigazione laterale che metterò in flex direction column justify-content between-->
-            <nav class="nav-bar fr flex">
+            <nav class="nav-bar flex">
                 <!-- sezione Logo -->
                 <header class="header-nav-bar">
                     <div id="logo-nav" class="flex">
@@ -119,9 +119,24 @@
             <!-- menu di navigazione principale che deve essere in flex con il wrap  -->
             <nav class="nav-centrale flex-nav-centrale">
                 <ul>
-                    <li>in evidenza</li>
-                    <li>podcast</li>
-                    <li>classigiche</li>
+                    <li>
+                        <a href="#">in evidenza</a>
+                    </li>
+                    <li>
+                        <a href="#">podcast</a>
+                    </li>
+                    <li>
+                        <a href="#">classifiche</a>
+                    </li>
+                    <li>
+                        <a href="#">generi e mood</a>
+                    </li>
+                    <li>
+                        <a href="#">nuove uscite</a>
+                    </li>
+                    <li>
+                        <a href="#">scopri</a>
+                    </li>
 
                 </ul>
             </nav>

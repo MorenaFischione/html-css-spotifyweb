@@ -48,15 +48,20 @@ hr {
 	float: right;
 }
 
-header.header-top,
-main.main-area-prince {
+header.header-top {
     width: 80%;
     height: 100px;
     background-color: rgb(26, 26, 26);
     text-align: end;
 }
 
-nav.nav-bar {
+main.main-area-prince {
+    width: 80%;
+    height: 100px;
+    background-color: #171f22;
+}
+
+div.area-control {
     width: 20%;
     background-color: black;
 }
@@ -94,22 +99,32 @@ nav.nav-centrale .flex-nav-centrale {
     justify-content: center;
 }
 
+nav.nav-centrale {
+    padding: 15px;
+}
 
 div img {
     width: 30px;
     vertical-align: middle;
-    padding: 10px 0;
 }
 
 main h3 {
     color: white;
     display: inline-block;
     vertical-align: middle;
+    padding: 20px 0;
+    text-transform: uppercase;
 }
 
 .bg-lightgrey,
 ul li>a {
     color:rgb(145, 145, 145, 0.5);
+}
+
+ul li {
+    color: white;
+    display: inline-block;
+    margin: 5px;
 }
 
 .img {
@@ -139,4 +154,10 @@ div.playlist-bottom {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.flex-nav-centrale {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
