@@ -13,7 +13,7 @@ body {
 footer {
     width: 100%;
     height: 100px;
-    background-color: yellow;
+    background-color: rgba(0, 0, 0, 0.836);
 }
 
 main {
@@ -91,12 +91,14 @@ section.upgrade-bunner {
 
 section.upgrade-bunner button.upgrade {
     width: 200px;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid white;
     border-radius: 50px;
     color: white;
     margin: 20px;
     background-color: rgba(0, 0, 0.9);
+    text-transform: uppercase;
+    font-size: 0.6em;
 }
 
 #logo-nav,
@@ -153,9 +155,14 @@ section.playlist-top h3 {
     margin: 0px;
 }
 
+.flex-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
 section.area-prince {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(24, 22, 22, 0.973);
     overflow-y: hidden;
     height: calc(100% - 100px);
 }
@@ -267,3 +274,35 @@ section.row div.img-video.video-10 {
     background-size: contain;
     border-radius: 50%;
 }
+
+.selected-song {
+    width: 20%;
+    padding: 10px;
+}
+
+div.copertina-song {
+    height: 40px;
+   
+}
+
+div.description-song {
+    padding: 0 5px;
+    color: white;
+}   
+
+i.far {
+    color: white;
+}
+
+div img.img-copertina {
+    width: 50px;
+}
+
+.col-left,
+.col-center,
+.col-right {
+    display: inline-block;
+    height: 50px;
+    padding: 10px;
+}
+
