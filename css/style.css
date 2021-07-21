@@ -57,7 +57,6 @@ header.header-top {
 
 main.main-area-prince {
     width: 80%;
-    height: 100px;
     background-color: #171f22;
 }
 
@@ -101,6 +100,10 @@ nav.nav-centrale .flex-nav-centrale {
 
 nav.nav-centrale {
     padding: 15px;
+}
+
+nav.nav-bar {
+    height: 100vh;;
 }
 
 div img {
@@ -160,4 +163,119 @@ div.playlist-bottom {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.flex-main-principe {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+div.titolo-sezione-row h2 {
+    padding: 0 10px;
+    color: white;
+}
+
+div.contain-video {
+    margin: 10px;
+    flex: 0 2 150px;
+}
+
+div.descrizione-video {
+    text-align: center;
+}
+
+
+section.row div.img-video {
+    width: 100%;
+    height: 150px;
+}
+
+div.descrizione-video h3 {
+    text-transform: none;
+    font-size: .8em;
+    color: white;
+    padding-top: 10px;
+}
+
+div.descrizione-video p,
+div.titolo-sezione-row p {
+    text-transform: none;
+    font-size: 0.7em;
+    color: rgb(145, 145, 145, 0.5);
+    padding: 10px;
+}
+
+
+section.row div.img-video.video-1 {
+    background-image: url(../img/metal_lifting.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.row div.img-video.video-2 {
+    background-image: url(../img/stranger.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.row div.img-video.video-3 {
+    background-image: url(../img/aquietplace.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.row div.img-video.video-4 {
+    background-image: url(../img/split.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.row div.img-video.video-5 {
+    background-image: url(../img/cure.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.row div.img-video.video-6 {
+    background-image: url(../img/sinister.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.row div.img-video.video-7 {
+    background-image: url(../img/radar.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.row div.img-video.video-8 {
+    background-image: url(../img/mixdaily.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.row div.img-video.video-9 {
+    background-image: url(../img/youg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+section.row div.img-video.video-10 {
+    background-image: url(../img/einaudi.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
 }
