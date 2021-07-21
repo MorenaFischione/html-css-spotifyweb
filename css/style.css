@@ -206,76 +206,17 @@ div.titolo-sezione-row p {
     padding: 10px;
 }
 
-
-section.row div.img-video.video-1 {
-    background-image: url(../img/metal_lifting.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.div.contain-video {
+    width: 150px;
 }
 
-section.row div.img-video.video-2 {
-    background-image: url(../img/stranger.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+img.img-video {
+    width: 100%;
+    object-fit: contain;
 }
 
-section.row div.img-video.video-3 {
-    background-image: url(../img/aquietplace.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-section.row div.img-video.video-4 {
-    background-image: url(../img/split.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-section.row div.img-video.video-5 {
-    background-image: url(../img/cure.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-section.row div.img-video.video-6 {
-    background-image: url(../img/sinister.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-section.row div.img-video.video-7 {
-    background-image: url(../img/radar.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-section.row div.img-video.video-8 {
-    background-image: url(../img/mixdaily.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-section.row div.img-video.video-9 {
-    background-image: url(../img/youg.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 50%;
-}
-
-section.row div.img-video.video-10 {
-    background-image: url(../img/einaudi.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.img-principe,
+.img-einaudi {
     border-radius: 50%;
 }
 
