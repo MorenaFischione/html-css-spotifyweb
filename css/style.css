@@ -10,6 +10,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
 
 ul {
     list-style-type: none ;
@@ -20,15 +30,28 @@ a {
     color: white;
 }
 
-hr {
-    color: white;ß
+div img {
+    width: 30px;
+    vertical-align: middle;
 }
 
-#logo-nav,
-#home,
-#playlist,
-#footer {
-    margin-left: 20px;
+ul li>a,
+.bg-lightgrey {
+    color:rgb(145, 145, 145, 0.5);
+}
+
+.img {
+    filter: invert(0.5);
+}
+
+div.icon-testo {
+    margin: 5px;
+}
+
+ul li {
+    color: white;
+    display: inline-block;
+    margin: 5px;
 }
 
 /* FLOAT  */
@@ -48,112 +71,70 @@ hr {
 	float: right;
 }
 
-header.header-top {
-    width: 80%;
+.area-control {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: calc(100vh - 100px);
+}
+
+.main-prince {
+    width: calc(100% - 200px);
+    height: 100%;
+}
+
+section.upgrade-bunner {
+    width: 100%;
     height: 100px;
-    background-color: rgb(26, 26, 26);
+    background-color: rgba(0, 0, 0, 0.9);
     text-align: end;
 }
 
-main.main-area-prince {
-    width: 80%;
-    background-color: #171f22;
-}
-
-div.area-control {
-    width: 20%;
-    background-color: black;
-}
-
-
-header div button.upgrade {
+section.upgrade-bunner button.upgrade {
     width: 200px;
     padding: 15px;
     border: 1px solid white;
     border-radius: 50px;
     color: white;
     margin: 20px;
-    background-color: rgb(26, 26, 26);
+    background-color: rgba(0, 0, 0.9);
 }
 
-#logo-nav img.logo-spotify {
-    width: 130px;
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-
-#footer .flex-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-nav.nav-centrale .flex-nav-centrale {
-    display: flex;
-    justify-content: center;
-}
-
-nav.nav-centrale {
-    padding: 15px;
+#logo-nav,
+section.nav-footer {
+    width: 100%;
+    height: 100px;
 }
 
 nav.nav-bar {
-    height: 100vh;;
+    height: 100%;
+    margin-left: 10px;
 }
 
-div img {
-    width: 30px;
-    vertical-align: middle;
-}
-
-main h3 {
-    color: white;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 20px 0;
-    text-transform: uppercase;
-}
-
-.bg-lightgrey,
-ul li>a {
-    color:rgb(145, 145, 145, 0.5);
-}
-
-ul li {
-    color: white;
-    display: inline-block;
-    margin: 5px;
-}
-
-.img {
-    filter: invert(0.5);
-}
-
-.img-profilo {
-    width: 20px;
-}
-
-
-header,
-main,
-footer {
-    flex: 0 1 130px;
-}
-
-div.playlist-bottom li {
-    padding: 5px 0;
-}
-
-div.playlist-bottom {
+section.nav-main {
+    height: calc( 100% - 200px);
     overflow-y: scroll;
 }
 
-.flex-footer {
+img.logo-spotify {
+    width: 80%;
+}
+
+section.playlist-top h3 {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.flex-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer .flex-nav-footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -170,6 +151,13 @@ div.playlist-bottom {
     justify-content: start;
     flex-wrap: wrap;
     margin: 0px;
+}
+
+section.area-prince {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: hidden;
+    height: calc(100% - 100px);
 }
 
 div.titolo-sezione-row h2 {

@@ -4,143 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
-    <title>Spotify</title>
+    <title>Spotify Nuovo</title>
 </head>
 <body>
-    <div class="container clearfix">
-        <!-- Bottone upgrade da posizionare a destra dell'header area di controllo -->
-        <!-- Header dell'area di controllo con le stesse dimensioni del main principale  -->
-        <header class="header-top fr">
-            <div>
-                <button class="upgrade">effetua l'upgrade</button>
-            </div>
-        </header>
+    <div class="container">
 
-        <div class="area-control fl">
-
-            <!-- Area di navigazione laterale che metterò in flex direction column justify-content between-->
-            <nav class="nav-bar flex">
-                <!-- sezione Logo -->
-                <header class="header-nav-bar">
-                    <div id="logo-nav" class="flex">
-                        <!-- immagine del logo  -->
-                        <img class="logo-spotify" src="img/logo.svg" alt="logo spotify">
-                    </div>
-                </header>
-
-                <!-- sezione Home -->
-                <main class="main-nav-bar">
-                    <section id="home" class="flex">
-                        <!-- home + icona  -->
-                        <div>
-                            <a href="#">
-                                <img class="img-home" src="img/home.svg" alt="immagine di home">
-                            </a>
-                            <a href="#">Home</a>
+        <main class="clearfix">
+            <section class="area-control fl">
+                <nav class="nav-bar flex-nav">
+                    <!-- logo spotify  -->
+                    <section class="logo-spotify">
+                        <div id="logo-nav">
+                            <!-- immagine del logo  -->
+                            <img class="logo-spotify" src="img/logo.svg" alt="logo spotify">
                         </div>
-                    
-                        <ul>
-                            <!-- Cerca + icona  -->
-                            <li class="cerca"> 
-                                <a href="#">
-                                    <img class="img img-cerca" src="img/search.svg" alt="immagine di cerca">
-                                </a>
-                                <a class="bg-lightgrey" href="#">Cerca</a>
-                            </li>
-                            <!-- la tua libreria + icona -->
-                            <li class="libreria">
-                                <a href="#">
-                                    <img class="img img-libreria" src="img/libreria.svg" alt="immagine di libreria">
-                                </a>
-                                <a class="bg-lightgrey" ref="#">La tua libreria</a>
-                            </li>
-                        </ul>
                     </section>
-
-                    <!-- sezione playlist  -->
-                    <section id="playlist" class="flex">
-                        <!-- parte alta della playlist con titolo + (sotto) immagine e testo  -->
-                        <div class="playlist-top">
-                            <h3>Playlist</h3>
-                            <div>
-                                <img class="img img-crea-pl" src="img/download.svg" alt=""> 
-                                <a class="bg-lightgrey" href="#">Crea Playlist</a>
-                            </div>                       
-                        </div>
-                        <!-- parte bassa playlist con elenco nome playlist che dovrà diventare in overflow -->
-                        <div class="playlist-bottom">
+                    <!-- home -->
+                    <section class="nav-main">
+                        <section id="home">
+                            <!-- home + icona  -->
+                            <div class="icon-testo">
+                                <a href="#">
+                                    <img class="img-home" src="img/home.svg" alt="immagine di home">
+                                </a>
+                                <a href="#">Home</a>
+                            </div>
+                        
                             <ul>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>   
-                            </ul> 
+                                <!-- Cerca + icona  -->
+                                <li class="cerca"> 
+                                    <a href="#">
+                                        <img class="img img-cerca" src="img/search.svg" alt="immagine di cerca">
+                                    </a>
+                                    <a class="bg-lightgrey" href="#">Cerca</a>
+                                </li>
+
+                                <!-- la tua libreria + icona -->
+                                <li class="libreria">
+                                    <a href="#">
+                                        <img class="img img-libreria" src="img/libreria.svg" alt="immagine di libreria">
+                                    </a>
+                                    <a class="bg-lightgrey" ref="#">La tua libreria</a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- sezione playlist  -->
+                        <section id="playlist">
+                            <!-- parte in alto della playlist con titolo e creaplaylist  -->
+                            <section class="playlist-top">
+                                <h3>Playlist</h3>
+                                <div>
+                                    <img class="img img-crea-pl" src="img/download.svg" alt=""> 
+                                    <a class="bg-lightgrey" href="#">Crea Playlist</a>
+                                </div>    
+                            </section>
+
+                            <!-- parte bassa playlist con elenco nome playlist che dovrà diventare in overflow -->
+                            <section class="playlist-bottom">
+                                <ul>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>   
+                                </ul> 
+                            </section>
+                        </section>
+                    </section>
+
+                    <!-- profilo  -->
+                    <section id="footer" class="nav-footer flex-nav-footer">
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img class="img img-scarica" src="img/download.svg" alt="immagine di download">
+                                    </a>
+                                    <a href="#">Istalla app</a>
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img class="img img-profilo" src="img/profile.svg" alt="immagine di profilo">
+                                    </a>
+                                    <a href="#">John Doe</a>
+                                </li>
+                            </ul>
                         </div>
                     </section>
-                </main>
-                <!-- Footer con icona Istalla app + barra + icona John Doe  che dovra rimanere fissa al restringimento-->
-                <footer id="footer" class="flex-footer">
-                    <div>
+                </nav>
+            </section>
+
+            <section class="main-prince fl">
+                <section class="upgrade-bunner">
+                    <button class="upgrade">effetua l'upgrade</button>
+                </section>
+
+                <section class="area-prince fl">
+                    <!-- menu di navigazione principale che deve essere in flex con il wrap  -->
+                    <nav class="nav-centrale flex-nav-centrale">
                         <ul>
                             <li>
-                                <a href="#">
-                                    <img class="img img-scarica" src="img/download.svg" alt="immagine di download">
-                                </a>
-                                <a href="#">Istalla app</a>
+                                <a href="#">in evidenza</a>
                             </li>
-                        </ul>
-                        <hr>
-                    </div>
-                    <div>
-                        <ul>
                             <li>
-                                <a href="#">
-                                    <img class="img img-profilo" src="img/profile.svg" alt="immagine di profilo">
-                                </a>
-                                <a href="#">John Doe</a>
+                                <a href="#">podcast</a>
+                            </li>
+                            <li>
+                                <a href="#">classifiche</a>
+                            </li>
+                            <li>
+                                <a href="#">generi e mood</a>
+                            </li>
+                            <li>
+                                <a href="#">nuove uscite</a>
+                            </li>
+                            <li>
+                                <a href="#">scopri</a>
                             </li>
                         </ul>
-                    </div>
-                </footer>
-            </nav>
-        </div>
-
-        <!-- - Header dell'area di controllo con le stesse dimensioni del main principale  --> 
-        <main class="main-area-prince fl">
-            <!-- menu di navigazione principale che deve essere in flex con il wrap  -->
-            <nav class="nav-centrale flex-nav-centrale">
-                <ul>
-                    <li>
-                        <a href="#">in evidenza</a>
-                    </li>
-                    <li>
-                        <a href="#">podcast</a>
-                    </li>
-                    <li>
-                        <a href="#">classifiche</a>
-                    </li>
-                    <li>
-                        <a href="#">generi e mood</a>
-                    </li>
-                    <li>
-                        <a href="#">nuove uscite</a>
-                    </li>
-                    <li>
-                        <a href="#">scopri</a>
-                    </li>
-
-                </ul>
-            </nav>
-            <!-- sezione che contiene i video recently played che deve essere in flex wrap  -->
+                    </nav>
+                    <!-- sezione che contiene i video recently played che deve essere in flex wrap  -->
             <div class="titolo-sezione-row">
                 <h2>Recently player</h2>
             </div>
@@ -237,16 +235,13 @@
                     </div>
                 </div>
             </section>
-            
-
-            
-
-
         </main>
 
-        <!-- 100% dell viewport diviso in 3 sezioni  -->
-        <footer></footer>
+        <footer>
+
+
+        </footer>
+
     </div>
-    
 </body>
 </html>
