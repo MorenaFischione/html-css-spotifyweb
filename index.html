@@ -24,6 +24,7 @@
                         <div id="logo-nav">
                             <!-- immagine del logo  -->
                             <img class="logo-spotify" src="img/logo.svg" alt="logo spotify">
+                            <img class="logo-spotify-mini" src="img/logo-small.svg" alt="">
                         </div>
                     </section>
                     <!-- home -->
@@ -34,7 +35,7 @@
                                 <a href="#">
                                     <img class="img-home" src="img/home.svg" alt="immagine di home">
                                 </a>
-                                <a href="#">Home</a>
+                                <a class="text" href="#">Home</a>
                             </div>
                         
                             <ul>
@@ -43,7 +44,7 @@
                                     <a href="#">
                                         <img class="img img-cerca" src="img/search.svg" alt="immagine di cerca">
                                     </a>
-                                    <a class="bg-lightgrey" href="#">Cerca</a>
+                                    <a class="bg-lightgrey text" href="#">Cerca</a>
                                 </li>
 
                                 <!-- la tua libreria + icona -->
@@ -51,7 +52,7 @@
                                     <a href="#">
                                         <img class="img img-libreria" src="img/libreria.svg" alt="immagine di libreria">
                                     </a>
-                                    <a class="bg-lightgrey" ref="#">La tua libreria</a>
+                                    <a class="bg-lightgrey text" ref="#">La tua libreria</a>
                                 </li>
                             </ul>
                         </section>
@@ -60,23 +61,23 @@
                         <section id="playlist">
                             <!-- parte in alto della playlist con titolo e creaplaylist  -->
                             <section class="playlist-top">
-                                <h3>Playlist</h3>
+                                <h3 class="text">Playlist</h3>
                                 <div>
                                     <img class="img img-crea-pl" src="img/download.svg" alt=""> 
-                                    <a class="bg-lightgrey" href="#">Crea Playlist</a>
+                                    <a class="bg-lightgrey text" href="#">Crea Playlist</a>
                                 </div>    
                             </section>
 
                             <!-- parte bassa playlist con elenco nome playlist che dovrà diventare in overflow -->
                             <section class="playlist-bottom">
                                 <ul>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>
-                                    <li><a href="#">Nome Playlist</a></li>   
+                                    <li><a class="text" href="#">Nome Playlist</a></li>
+                                    <li><a class="text" href="#">Nome Playlist</a></li>
+                                    <li><a class="text" href="#">Nome Playlist</a></li>
+                                    <li><a class="text" href="#">Nome Playlist</a></li>
+                                    <li><a class="text" href="#">Nome Playlist</a></li>
+                                    <li><a class="text" href="#">Nome Playlist</a></li>
+                                    <li><a class="text" href="#">Nome Playlist</a></li>   
                                 </ul> 
                             </section>
                         </section>
@@ -90,7 +91,7 @@
                                     <a href="#">
                                         <img class="img img-scarica" src="img/download.svg" alt="immagine di download">
                                     </a>
-                                    <a href="#">Istalla app</a>
+                                    <a class="text" href="#">Installa app</a>
                                 </li>
                             </ul>
                             <hr>
@@ -101,7 +102,7 @@
                                     <a href="#">
                                         <img class="img img-profilo" src="img/profile.svg" alt="immagine di profilo">
                                     </a>
-                                    <a href="#">John Doe</a>
+                                    <a class="text" href="#">John Doe</a>
                                 </li>
                             </ul>
                         </div>
@@ -116,8 +117,8 @@
 
                 <section class="area-prince fl">
                     <!-- menu di navigazione principale che deve essere in flex con il wrap  -->
-                    <nav class="nav-centrale flex-nav-centrale">
-                        <ul>
+                    <nav class="nav-centrale">
+                        <ul class="flex-nav-centrale">
                             <li>
                                 <a href="#">in evidenza</a>
                                 <div class="underline"></div>
@@ -272,8 +273,10 @@
                     <h6>Brano Nome</h6>
                 </div>
                 <div class="col-right ">
-                    <a href="#"><i class="far fa-heart"></i></a>
-                    <a href="#"><i class="far fa-folder"></i></a>       
+                    <div class="icon-profile clearfix">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="far fa-folder"></i></a>     
+                    </div>  
                 </div>
             </section>
 

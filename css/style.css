@@ -60,7 +60,7 @@ div.icon-testo {
 
 ul li {
     color: white;
-    display: inline-block;
+    /* display: inline-block; */
     margin: 5px;
 }
 
@@ -136,9 +136,13 @@ img.logo-spotify {
     width: 80%;
 }
 
+img.logo-spotify-mini {
+    width: 65%;
+    display: none;
+}
+
 section.playlist-top h3 {
     color: white;
-    display: inline-block;
     vertical-align: middle;
     padding: 10px;
     text-transform: uppercase;
@@ -462,13 +466,147 @@ div.underline:target {
     }
 
     div.contain-video {
-        flex: 0 2 125px;
+        flex: 0 1 25%;
     }
 }
 
-@media screen and (min-width: 765px) and (max-width: 568px) {
+@media screen and (min-width: 568px) and (max-width: 765px) {
+
     .flex-main-principe {
         flex-wrap: wrap;
     }
+
+
+    div.contain-video {
+        flex: 0 1 50%;
+    }
+
+    i.far.fa-heart {
+        display: block;
+    }
+
+    .barra-scorrimento {
+        width: calc(100% - 85px);
+        margin: 0 10px;
+    }
+
+    .time {
+        font-size: .8em;
+    }
+
+    .barra-scorrimento-vol {
+        width: calc(100% - 85px);
+    }
+
+    i.fas.fa-random,
+    i.fas.fa-fast-backward,
+    div.row-top i.far.fa-play-circle,
+    i.fas.fa-fast-forward {
+        font-size: .6em;
+        padding: 0px 10px;
+    }
+
+    .row-top {
+    font-size: 1.5em;
+    padding: 10px 0;
+    }
+
+    .row-buttom {
+        width: 100%;
+    }
 }
 
+@media screen and (max-width: 567px) {
+
+    main {
+        min-width: 681px;
+    }
+
+    footer {
+        width: 100%;
+    }
+    .text {
+        display: none;
+    }
+
+    .img-libreria {
+        display: block;
+    }
+
+    img.logo-spotify {
+        display: none;
+    }
+
+    img.logo-spotify-mini {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .area-control {
+        width: 65px;
+    }
+
+    div.contain-video {
+        flex: 0 1 50%;
+    }
+
+    .flex-main-principe {
+        flex-wrap: wrap;
+    }
+
+    .col-left {
+        width: 30px;
+    }
+
+    .col-center,
+    .col-right {
+        padding: 10px 0;
+    }
+
+    div.col-center h5{
+        font-size: .7em;
+    }
+
+    div.col-center h6{
+        font-size: .5em;
+    }
+
+    .selected-song, 
+    .volum-bar {
+        width: 120px;
+    }
+
+    .control-bar {
+        width: calc(100% - 240px);
+    }
+
+    .row-top {
+        font-size: .5em;
+    }
+
+    div.row-buttom {
+        width: 100%;
+        text-align: center;
+    }
+
+    .time {
+        font-size: .5em;
+    }
+
+    .barra-scorrimento {
+        width: calc(100% - 100px);
+        margin: 0;
+    }    
+
+    .icon-bar-volum {
+        font-size: .7em;
+    }
+
+    .barra-scorrimento-vol {
+        width: 33px;
+        border-bottom: 4px solid gray;
+        border-radius: 2px;
+    }
+
+
+}
