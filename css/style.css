@@ -35,6 +35,7 @@ div img {
     vertical-align: middle;
 }
 
+
 ul li>a,
 .bg-lightgrey {
     color:rgb(145, 145, 145, 0.5);
@@ -95,6 +96,7 @@ section.upgrade-bunner {
 
 section.upgrade-bunner button.upgrade {
     width: 200px;
+    height: 35px;
     padding: 10px;
     border: 1px solid white;
     border-radius: 50px;
@@ -169,6 +171,12 @@ section.area-prince {
     background-color: rgba(24, 22, 22, 0.973);
     overflow-y: hidden;
     height: calc(100% - 100px);
+}
+
+ul li div.underline {
+    width: 50px;
+    border: 2px solid greenyellow;
+    text-align: center;
 }
 
 div.titolo-sezione-row h2 {
@@ -267,10 +275,16 @@ img.img-copertina {
     flex-wrap: nowrap;
 }
 
-.fas,
+.fas {
+    padding: 0 20px;
+    color: white;
+}
+
 .fa-play-circle {
     padding: 0 20px;
     color: white;
+    width: 72px;
+    height: 32px;
 }
 
 .barra-scorrimento {
@@ -301,3 +315,40 @@ img.img-copertina {
     display: inline-block;
 }
 
+/* EFFETTO HOVER  */
+
+section.upgrade-bunner button.upgrade:hover {
+    width: 220px;
+    height: 50px;
+    transition: all 1s ease;
+}
+
+ul li>a:hover {
+    color: white;
+}
+
+.img:hover {
+    filter: invert(0);
+}
+
+.bg-lightgrey:hover {
+    color: white;
+}
+
+div.description-song h6:hover {
+    text-decoration: underline;
+}
+
+.fa-heart:hover {
+    color: gray;
+}
+
+.fa-folder:hover {
+    color: gray;
+}
+
+a.play:hover {
+    width: 72px;
+    height: 40px;
+    transition: all 1s ease;
+}
