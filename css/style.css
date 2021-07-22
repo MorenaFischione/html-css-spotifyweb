@@ -196,8 +196,8 @@ div.titolo-sezione-row h2 {
 
 div.contain-video {
     position: relative;
-    margin: 10px;
-    flex: 0 2 150px;
+    padding: 10px;
+    flex: 0 1 16.66%;
 }
 
 
@@ -209,8 +209,9 @@ div.contain-video i.fa-play-circle {
 
 
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -243,6 +244,10 @@ div.titolo-sezione-row p {
 
 .div.contain-video {
     width: 150px;
+}
+
+.contain-img {
+    position: relative;
 }
 
 img.img-video {
