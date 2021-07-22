@@ -46,6 +46,14 @@ ul li>a,
     filter: invert(0.5);
 }
 
+img.img-profilo {
+border-radius: 50%;
+width: 28px;
+background-color: gray;
+color: white;
+filter: invert(.9);
+}
+
 div.icon-testo {
     margin: 5px;
 }
