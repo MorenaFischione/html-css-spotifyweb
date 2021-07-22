@@ -166,7 +166,7 @@ section.playlist-top h3 {
 .flex-main-principe {
     display: flex;
     justify-content: start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 0px;
 }
 
@@ -178,7 +178,7 @@ section.playlist-top h3 {
 section.area-prince {
     width: 100%;
     background-color: rgba(24, 22, 22, 0.973);
-    overflow-y: hidden;
+    overflow-y: scroll;
     height: calc(100% - 100px);
 }
 
@@ -322,6 +322,10 @@ img.img-copertina {
     border-radius: 10px; 
 }
 
+.time {
+    display: inline;
+}
+
 .fa-list,
 .fa-desktop,
 .fa-volume-up {
@@ -390,4 +394,69 @@ div.contain-video:hover i.fa-play-circle {
 
 div.underline:target {
     display: block;
+}
+
+/* MEDIAQUERY  */
+
+@media screen and (min-width: 766px) and (max-width: 1024px) {
+    div.row-buttom {
+        flex-shrink: 2px;
+    }
+
+    .flex-footer-lf {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .flex-main-principe {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .row-top {
+        font-size: 2em;
+        padding: 10px 0;
+    }
+
+    .time {
+        display: inline;
+        font-size: 1em;
+        color: white;
+    }
+
+    .barra-scorrimento {
+        width: 185px;
+        border-bottom: 6px solid gray;
+        display: inline-block;
+        margin: 0 20px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .selected-song, .volum-bar {
+        width: 30%;
+        padding: 20px 0;
+        color: white;
+    }
+
+    .control-bar {
+        width: 40%;
+    }
+
+    section.area-control {
+        width: 180px;
+    }
+
+    .main-prince {
+        width: calc(100% - 180px);
+    }
+
+    div.contain-video {
+        flex: 0 2 125px;
+    }
 }
