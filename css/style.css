@@ -19,6 +19,7 @@ footer {
 main {
     width: 100%;
     height: calc(100vh - 100px);
+    overflow: scroll;
 }
 
 ul {
@@ -177,6 +178,7 @@ ul li div.underline {
     width: 50px;
     border: 2px solid greenyellow;
     text-align: center;
+    display: none;
 }
 
 div.titolo-sezione-row h2 {
@@ -185,9 +187,24 @@ div.titolo-sezione-row h2 {
 }
 
 div.contain-video {
+    position: relative;
     margin: 10px;
     flex: 0 2 150px;
 }
+
+
+div.contain-video i.fa-play-circle {
+
+    font-size: 4em;
+    color: white;
+    display: none;
+
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
 
 div.descrizione-video {
     text-align: center;
@@ -197,7 +214,9 @@ div.descrizione-video {
 section.row div.img-video {
     width: 100%;
     height: 150px;
+    position: absolute;
 }
+
 
 div.descrizione-video h3 {
     text-transform: none;
@@ -280,12 +299,12 @@ img.img-copertina {
     color: white;
 }
 
-.fa-play-circle {
+/* div.row-top .fa-play-circle {
     padding: 0 20px;
     color: white;
     width: 72px;
     height: 32px;
-}
+} */
 
 .barra-scorrimento {
     width: 300px;
@@ -351,4 +370,16 @@ a.play:hover {
     width: 72px;
     height: 40px;
     transition: all 1s ease;
+}
+
+.contain-video:hover img.img-video {
+    opacity: 0.5;
+}
+
+div.contain-video:hover i.fa-play-circle {
+    display: block;
+}
+
+div.underline:target {
+    display: block;
 }
